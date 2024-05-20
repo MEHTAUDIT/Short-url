@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <h1>From Node Server</h1>
+    
+    <form action="/url" type="post">
+        <label>Enter Url</label>
+        <input type="text" placeholder="http://www.google.com" name="url"/>
+        <button type="submit">Enter</button>
+    </form>
+
+    <% locals.urls.forEach(function(item) { %>
+        <li><%= item %></li>
+    <% }); %>
+
+</body>
+</html>
